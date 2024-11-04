@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #8fbfee;
+    background-image: url('fundo\ azul.jpg');
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #000000;
+}
+
+
+
+
+section {
+    margin-bottom: 20px;
+    background-color: #0d8de6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(247, 224, 224, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    background-image: url('fundo\ azul\ claro.jpg')
+}
+
+
+footer {
+    
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.areas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.area-item {
+    flex: 1;
+    margin: 10px;
+    background-color: #0056b3;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(245, 234, 234, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+    background-image: url('fundo\ azul\ claro.jpg');
+}
+
+.area-item:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(252, 235, 235, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
